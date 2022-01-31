@@ -1,0 +1,12 @@
+<%- include("partials/header"); -%>
+
+<div class="search">
+<% titles.forEach(function(title){ %>
+
+    <ul class="li">
+      <li ><%=title.title %></li>
+    </ul>
+
+<% }) %>
+</div>
+<%- include("partials/footer"); -%>
