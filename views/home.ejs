@@ -11,13 +11,12 @@
 <h3>Home</h3>
 <p><%= homeContent %></p>
 
+
 <% posts.forEach(function(post){ %>
 
    <h3> <%= post.title %> </h3>
    <p> <%= post.content.substring(0,200)+ "..." %> <a href= "/posts/<%= post._id %>">Read More</a></p>
 <% }); %>
-
-
 
 </body>
 </div>
